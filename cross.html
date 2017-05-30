@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="cross badmephisto rubiks cube main page cubing speedcubing speedsolving fast fridrich method youtube teacher" />
+<meta name="description" content="Badmephisto's cubing website" />
+<title>Badmephisto's Cubing Site: Cross</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/JavaScript" src="showpicture.js"></script>
+<script type="text/JavaScript" src="ajaxstuff.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+$("#comments").load("phpdb/cross_comments.txt"); 
+$("#ncb").bind("click", function(){ newComment("cross"); });
+});
+</script>
+</head>
+
+<body>
+<style type="text/css">
+<!--
+.style123 {
+	margin-top: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #003300;
+}
+
+.bomo {
+	border: 0;
+	border-left: solid 5px #9CC8A2;
+}
+
+.bomo:hover {
+	border-left: solid 5px black;
+}
+#iphonec{
+	float: right;
+	margin-right: 10px;
+	width: 250px;
+}
+#fab{
+	float:right;
+	margin-right: 80px;
+	margin-top: 50px;
+}
+.slol {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+img {
+	border: none;
+}
+-->
+</style>
+<div id="header">
+	<table border="0px" width="100%">
+	<tr>
+	<td width="9%">
+	<img src="cubepic.png" id="cubepic" />	</td>
+	<td width="77%">
+    
+    
+      <div id="iphonec"> <a href="https://defhacks.github.io/badmephisto-mirror/iphone/" target="_blank"><img src="headerpics/iphoneapp.png" style="float: left;"/></a><br />
+      <span class="slol">
+      Try my new iPhone app!<br />
+      Forget printable sheets!<br /><br />
+      Contains all my algorithms:<br />
+      - OLL/PLL/2-look<br />
+      - Beginner's method<br />
+      - Notation page<br />
+      </span>
+      </div>
+      
+      <div id="fab">
+      
+      <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2Fbadmephisto%2F120835544626563&amp;width=250&amp;colorscheme=dark&amp;show_faces=false&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:62px;" allowTransparency="true"></iframe>
+      
+      </div>
+      
+	  <div align="right" class="style123">
+	  <div align="center">BADMEPHISTO's CUBING PAGE </div>
+      <div align="center"><a href="http://www.youtube.com/user/badmephisto" target="_blank"><img src="visitmy.png" style="border-style: none"></img></a></div>
+	 </div>
+	</td>
+	<td width="14%">
+	<div id="extlinks" align="right" style="margin-right: 50px;">
+		<img src="headerpics/external.jpg"/><br />
+		<a href="http://www.speedsolving.com/wiki" target="_blank"><img src="headerpics/wiki.jpg" class="bomo"/></a><br />
+	    <a href="http://www.speedsolving.com/forum/index.html" target="_blank"><img src="headerpics/forums.jpg" class="bomo"/></a><br />
+	   <a href="notation.html" target="_blank"><img src="headerpics/notation.jpg" class="bomo"/></a>	</div>	</td>
+	</tr>
+	</table>
+</div>
+<div id="body">
+	<div id="navbar">
+		<ul>
+		<li><a href="index.html"><img src="faq.png" />FAQ</a></li>
+        <li><a href="guide.html"><img src="guide.png" />GUIDE</a></li>
+        <br />
+		<li><a href="cross.html"><img src="cross.png" />CROSS</a></li>
+		<li><a href="f2l.html"><img src="f2l.png" />F2L</a></li>
+		<li><a href="oll.html"><img src="oll.png" />OLL</a></li>
+		<li><a href="pll.html"><img src="pll.png" />PLL</a></li>
+        <br />
+		<li><a href="beg.html" style="font-size: 12px;"><img src="beg.png"/>BEGINNER's</a></li>
+		</ul>
+		
+		<br /><br />
+		<div style="margin-left: 25px;">
+		<script type="text/javascript"><!--
+		google_ad_client = "pub-7310724940682242";
+		/* 120x240, created 2/2/09 */
+		google_ad_slot = "0377999770";
+		google_ad_width = 120;
+		google_ad_height = 240;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+		</div>
+</div>	<div id="commentbox">
+		<h1>Comments disabled.</h1>
+    <p>Permanently. There used to be comments here that people could leave freely, but there were
+    too many trolls who abused the system and left profane messages. Thanks to those who left nice or
+    helpful comments that complemented the site.</p>
+		<div id="comments">
+		</div>
+    
+	</div>	
+	<div id="content">
+		<h1>CROSS</h1>
+		<img src="cross.png" class="leftfloat"/>
+		<p>Cross is the first step of the Fridrich method for solving the Rubik's cube. <br />In this step 4 edges have to be solved to their correct positions.</p>
+		<br />
+		
+		<h2>Theory</h2>
+		<img src="pictures/crossStudy.jpg"  width="320px" height="250px" class="rightfloat"/>
+		<p>Take a look at the graph on the right. It shows the number of moves that you need to make to solve a white cross. <br />Most interesting is the fact that <b>most of the time the cross can be solved in 6 or less moves.</b> </p>
+		
+		<h2>Color Choice</h2>
+		<p>The most often chosen side to make a cross on, by convention, is white. Most people are thus said to make a 'white cross'. </p><p> However, there are a few people that are called color-neutral. This means that they first decide which cross looks easy to make, and then they make that cross. This approach saves about 1 move in the cross stage, but it is often argued that it is not worth doing it because of slower recognition times especially in F2L stage, because the color scheme is ever-changing.</p> <p>There is yet one more class of people that make dual-color crosses. They choose to do either white or yellow cross. This decreases the number of moves in cross stage, but arguably doesn't change the F2L recognition times by as much.</p><p>This issue often leads to a lot of discussion, and there is no definite consensus on what cross color(s) are best to use.</p><p>Lars Vandenbergh analyzed this issue quantitavily and the whole page can be seen <a href="http://www.cubezone.be/crossstudy.html">here</a>. Here are the results summarized:
+		<ul>
+		<li>Averge number of moves to solve <b>white cross: 5.81</b></li>
+		<li>Averge number of moves to solve <b>dual cross: 5.39</b></li>
+		<li>Averge number of moves to solve <b>neutral cross: 4.81</b></li>
+		</ul>
+		<p> Looking at the results I am personally convinced that it is best to choose one color and stick with it </p>
+		
+		<h2>Placement Choice</h2>
+		<p>There is much more consensus on where you should solve your cross. Here are the variations that make at least some sense:</p>
+		<ul>
+		<li><b>Cross on top</b></li>
+		<ul><li>Pros: Easy for beginners because they can see their progress with the edges.</li><li>Cons: Slowest variation of all. In the end of the cross you have to turn the cube over to begin solving the F2L (second stage), and this takes a lot of time. There is also the fact that you deprive yourself of valuable look-ahead time, because all the interesting stuff goes on in the last layer, opposite the cross layer.</li></ul>
+		<li><b>Cross on left</b></li>
+		<ul><li>Pros: Enables look ahead.</li><li>Cons: None really. It is a good compromise between cross on top and bottom. Having said that, not many people make a cross on the left, possibly because the fingertricks are not that good for this variation.</li></ul>
+		<li><b>Cross on bottom</b></li>
+		<ul><li>Pros: Enables great lookahead, and also decent fingertricks. Most of the really good speedcubers solve the cross on bottom, and so should you.</li><li>Cons: It may be a little akward for beginners at first because you cannot see your progress with the edges, and it is also hard to see if you accidentally screwed up. And if you do, it is guaranteed to be a huge setback.</li></ul>
+		</ul>
+		<h2>Tutorials</h2>
+		<p>Below is my tutorial on advanced cross techniques</p>
+		<div class="centereddiv"><a href="http://www.youtube.com/watch?v=hY_FbpdNRCQ" target="_blank"><img src="pictures/crossvid.jpg" border="0"/></a></div>
+        <p>And tips for making the cross on the bottom:</p>
+		<div class="centereddiv"><a href="http://www.youtube.com/watch?v=BTydBg21aaw" target="_blank"><img src="pictures/crossbott.jpg" border="0"/></a></div>
+        
+		<h2>Links</h2>	
+		<a href="http://www.cubestation.co.uk/cs2/index.html?page=3x3x3/cfop/cross/cross" target="_blank">Dan's Cross Explanation</a> is a nice page describing many useful concepts about cross building, but in my opinion his 3-color rule is not too worth looking into.
+	</div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3698471-3");
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

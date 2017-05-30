@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Rubik's Cube solution</title>
+<style type="text/css">
+<!--
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+table {
+	padding: 0px;
+	margin: 0px;
+}
+h1 {
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: solid black 1px;
+}
+h1 p {
+	margin: 2px;
+}
+h2 {
+	font-size: 18px;
+	text-align: center;
+	font-weight: normal;
+	border-bottom: solid black 1px;
+}
+.alg {
+	color: #006;
+	font-weight: bold;
+}
+
+.descr {
+	font-size: 10px;
+}
+#container {
+	width: 800px;
+	padding: 10px;
+}
+
+td {
+	vertical-align: top;
+	padding: 3px;
+}
+
+-->
+</style>
+</head>
+
+<body>
+<div id="container">
+<h2>RUBIK'S CUBE SOLUTION: PRINTABLE CHEAT SHEET<br />
+</h2>
+
+<table width="800" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="383">
+    <h1>
+      <p>STEP 1: CROSS</p>
+    </h1>
+      <img src="cross.png"/><img src="crossbad.png"/>
+      </td>
+    <td width="417">
+    <h1>
+      <p>STEP 2: BOTTOM LAYER CORNERS</p>
+    </h1>
+      <p>Every algorithm moves a corner from top to bottom right below without disrupting the cross.</p>
+      <img src="f1l.png" />
+      </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="800" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="382"><h1>
+      <p>STEP 3: MIDDLE LAYER EDGES</p>
+    </h1>
+      <p>First algorithm inserts the edge from top to the middle in the front.<br />
+        Second algorithm inserts the edge from top to the middle in the back. (arrows attempt to show this)</p>
+      <img src="edges_arrows.png" /></td>
+    <td width="418"><h1>
+      <p>STEP 4: EDGE ORIENTATION</p>
+    </h1>
+      <p>If no edges are yellow on top, apply first algorithm and then the second.<br />
+        Remember that f is just like F, but you turn the middle slice together with the front face too.</p>
+      <table width="400" border="0">
+        <tr>
+          <td><img src="oe1.gif" width="70" height="70" /></td>
+          <td><img src="oe2.gif" width="70" height="70" /></td>
+        </tr>
+        <tr>
+          <td><span class="alg">F (R U R' U') F'</span></td>
+          <td><span class="alg">f (R U R' U') f'</span><br /> or <span class="alg">U2 F (U R U' R') F'</span></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+<p>&nbsp;</p>
+<h1><p>STEP 5: CORNER ORIENTATION<br /></p></h1>
+<p>Algorithm: <span class="alg">R U R' U R U2 R'</span></p>
+<table width="800" cellpadding="5" cellspacing="0">
+  <tr>
+    <td width="195" valign="top">If <strong>ONE</strong> corner yellow: move it to the bottom left, then apply the algorithm.</td>
+    <td width="202" valign="top">if <strong>TWO</strong> corners are yellow: rotate top layer until a yellow sticker is on the bottom left, <strong>facing front.</strong><br />
+      Then apply the algorithm.   <br /></td>
+    <td width="189" valign="top">if <strong>ZERO</strong> corners are yellow: rotate top layer until a yellow sticker is on the bottom left, <strong>facing left.</strong><br />
+      The apply the algorithm.</td>
+  </tr>
+  <tr>
+    <td><img src="oc1.gif" width="70" height="70" /> OR   <img src="oc2.gif" width="70" height="70" /></td>
+    <td><img src="2oc.gif" width="70" height="70" /> <br />
+      view from top</td>
+    <td><img src="4oc.gif" width="70" height="70" /><br /> 
+      view from top</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table width="800" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="372">
+      <h1>
+        <p>STEP 6: CORNER PERMUTATION</p>
+        </h1>
+        <p>Roatate top layer until headlights are in the back. If you don't have headlights, first apply the algorithm to get them.</p>
+      <span class="alg">R' F R' B2 R F' R' B2 R2</span><br />
+      <img src="pc1.gif" width="70" height="70" /></td>
+    <td width="428">
+      <h1><p>STEP 7: EDGE PERMUTATION</p></h1>
+      <p>Roatate top layer until the solved edge is in the back. If you don't have a solved edge, first apply the algorithm to get one.</p>
+        <span class="alg">(R U') (R U) (R U) (R U') R' U' R2</span><br />
+        <img src="pe2.gif" width="70" height="70" /></td>
+  </tr>
+</table>
+</div>
+
+</body>
+</html>

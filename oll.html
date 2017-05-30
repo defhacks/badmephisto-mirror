@@ -1,0 +1,631 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="faq badmephisto rubiks cube main page cubing speedcubing speedsolving fast fridrich method youtube teacher" />
+<meta name="description" content="Badmephisto's cubing website" />
+<title>Badmephisto's Cubing Site: OLL's</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/JavaScript" src="ajaxstuff.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+$("#comments").load("phpdb/oll_comments.txt"); 
+$("#ncb").bind("click", function(){ newComment("oll"); });
+});
+</script>
+
+</head>
+<body>
+<style type="text/css">
+<!--
+.style123 {
+	margin-top: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #003300;
+}
+
+.bomo {
+	border: 0;
+	border-left: solid 5px #9CC8A2;
+}
+
+.bomo:hover {
+	border-left: solid 5px black;
+}
+#iphonec{
+	float: right;
+	margin-right: 10px;
+	width: 250px;
+}
+#fab{
+	float:right;
+	margin-right: 80px;
+	margin-top: 50px;
+}
+.slol {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+img {
+	border: none;
+}
+-->
+</style>
+<div id="header">
+	<table border="0px" width="100%">
+	<tr>
+	<td width="9%">
+	<img src="cubepic.png" id="cubepic" />	</td>
+	<td width="77%">
+    
+    
+      <div id="iphonec"> <a href="https://defhacks.github.io/badmephisto-mirror/iphone/" target="_blank"><img src="headerpics/iphoneapp.png" style="float: left;"/></a><br />
+      <span class="slol">
+      Try my new iPhone app!<br />
+      Forget printable sheets!<br /><br />
+      Contains all my algorithms:<br />
+      - OLL/PLL/2-look<br />
+      - Beginner's method<br />
+      - Notation page<br />
+      </span>
+      </div>
+      
+      <div id="fab">
+      
+      <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2Fbadmephisto%2F120835544626563&amp;width=250&amp;colorscheme=dark&amp;show_faces=false&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:62px;" allowTransparency="true"></iframe>
+      
+      </div>
+      
+	  <div align="right" class="style123">
+	  <div align="center">BADMEPHISTO's CUBING PAGE </div>
+      <div align="center"><a href="http://www.youtube.com/user/badmephisto" target="_blank"><img src="visitmy.png" style="border-style: none"></img></a></div>
+	 </div>
+	</td>
+	<td width="14%">
+	<div id="extlinks" align="right" style="margin-right: 50px;">
+		<img src="headerpics/external.jpg"/><br />
+		<a href="http://www.speedsolving.com/wiki" target="_blank"><img src="headerpics/wiki.jpg" class="bomo"/></a><br />
+	    <a href="http://www.speedsolving.com/forum/index.html" target="_blank"><img src="headerpics/forums.jpg" class="bomo"/></a><br />
+	   <a href="notation.html" target="_blank"><img src="headerpics/notation.jpg" class="bomo"/></a>	</div>	</td>
+	</tr>
+	</table>
+</div>
+<div id="body">
+	<div id="navbar">
+		<ul>
+		<li><a href="index.html"><img src="faq.png" />FAQ</a></li>
+        <li><a href="guide.html"><img src="guide.png" />GUIDE</a></li>
+        <br />
+		<li><a href="cross.html"><img src="cross.png" />CROSS</a></li>
+		<li><a href="f2l.html"><img src="f2l.png" />F2L</a></li>
+		<li><a href="oll.html"><img src="oll.png" />OLL</a></li>
+		<li><a href="pll.html"><img src="pll.png" />PLL</a></li>
+        <br />
+		<li><a href="beg.html" style="font-size: 12px;"><img src="beg.png"/>BEGINNER's</a></li>
+		</ul>
+		
+		<br /><br />
+		<div style="margin-left: 25px;">
+		<script type="text/javascript"><!--
+		google_ad_client = "pub-7310724940682242";
+		/* 120x240, created 2/2/09 */
+		google_ad_slot = "0377999770";
+		google_ad_width = 120;
+		google_ad_height = 240;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+		</div>
+</div>	<div id="commentbox">
+		<h1>Comments disabled.</h1>
+    <p>Permanently. There used to be comments here that people could leave freely, but there were
+    too many trolls who abused the system and left profane messages. Thanks to those who left nice or
+    helpful comments that complemented the site.</p>
+		<div id="comments">
+		</div>
+    
+	</div>	<div id="content">
+		<h1>Orientation of Last Layer (OLL)</h1>
+		<img src="oll.png" class="leftfloat"/>
+		<p>OLL is the 3rd step of the Fridrich Method. Right after you finish the F2L, your cube will look like one of the following cases on top. After performing the algorithm, your cube should be all yellow on top.</p>
+		<br />
+		<h2>2look OLL</h2>
+		<img src="2lookOLLscr.jpg" class="leftfloat"/>
+		<p>You need all of the 57 algorithms below to solve this stage in a single step. However, if you are willing to do it in two steps instead, you can use what is called the 2look OLL. You then only have to learn 9 of them (at the expense of speed obviously). Watch my video <a href="http://www.youtube.com/watch?v=DTYvklyOpVM" target="_blank">HERE</a> to learn the 2look OLL.</p>
+		<p>Also, <a href="2LookOLL.pdf" target="_blank">here</a> is a printable sheet of all cases and solutions for reference, in pdf format (Thank you Husayn for making and sending me this sheet)</p>
+        
+        <h2>OLL Trainer</h2>
+		<img src="ollscreen.png" class="leftfloat"/>
+		<p>This is a program that I wrote that helps you practice OLLs. (Almost exactly same thing as my PLL trainer). It generates a random OLL, and then it times how quickly you can perform it. It keeps track of all of this, gives you averages, etc. To rotate any of the OLL's in the program, just rotate the image in the folder. The program simply loads these images when it starts.</p>
+		<p><a href="Oll_Trainer.zip" target="_blank">DOWNLOAD</a>, <a href="trainerlinux.html" target="_blank">How-to run on Linux (thanks Gopi!)</a></p>
+        
+        
+		<h2>Algorithms I use (or want to use)</h2>
+		<p>Follow down the list and learn the algs. Use more as a guidline than a rule. Skip hard ones if you think they are hard, come back, etc... </p>
+        <p><a href="badmephisto-speedcubing-method.pdf" target="_blank">PRINTABLE PAGE (pdf)</a> (thanks Andy! also check out his nice <a href="http://www.kungfoomanchu.com/" target="_blank"> website</a> for more pdfs)</p>
+		<p><a href="ollpage_print.html" target="_blank">Alternate printable page (html)</a> is provided if you want to print these out.</p>
+		<p>And don't forget the <a href="notation.html" target="_blank">NOTATION PAGE</a></p>
+		
+		<p>First: learn a single trigger,<span class="style1"> (R U R' U')</span>. Right away you can easily know almost 19 OLL Algorithms, and thats out of 57! Thats exactly a THIRD of all OLLs.</p>
+	
+		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Badmephisto's Guide to OLL's</title>
+
+<style type="text/css">
+	table {
+		border: 0px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	#content td {
+		border: solid 1px #AAAAAA;
+	}
+	hr {
+		color: #003366;
+		background-color: #003366;
+		height: 1px;
+	}
+	#out {
+		color: red;
+		font-weight: bold;
+		font-size: 10px;
+	}
+.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style2 {
+	color: #FF9797;
+	font-weight: bold;
+}
+.style3 {
+	color: #0000FF;
+	font-weight: bold;
+}
+.style4 {
+	color: #006600;
+	font-weight: bold;
+}
+.style15 {color: #FF00CC;}
+.style17 {color: #FF00CC; font-weight: bold; }
+</style>
+</head>
+
+<body>
+
+<table width="100%">
+  <tr>
+    <td width="37" bgcolor="#D9E7FF">Case</td>
+    <td width="75" bgcolor="#D9E7FF">Diagram</td>
+    <td width="273" bgcolor="#D9E7FF">Algorithm</td>
+    <td width="183" bgcolor="#D9E7FF">Comment</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><img src="cases/oll41.gif" width="68" height="68" /></td>
+    <td><strong>F <span class="style1">(R U R' U')</span> F'</strong></td>
+    <td>Simplest OLL of them all </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><img src="cases/oll17.gif" width="68" height="68" /></td>
+    <td><strong>F <span class="style1">(R U R' U')  (R U R' U')</span> F'</strong></td>
+    <td>Just repeat the trigger one more time </td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><img src="cases/oll49.gif" width="68" height="68" /></td>
+    <td><strong>F <span class="style1">(R U R' U')  (R U R' U') (R U R' U')</span> F'<br />
+    y (R' U' R) U' (R' U R) U' (R' U2 R) </strong></td>
+    <td>Just repeat the trigger 3 times. The second one is the one I use, its much faster </td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><img src="cases/oll38.gif" width="68" height="68" /></td>
+    <td><strong>f <span class="style1">(R U R' U')</span> f' </strong></td>
+    <td>Instead of F F' you now have f and f ' </td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><img src="cases/oll11.gif" width="68" height="68" /></td>
+    <td><strong>f<span class="style1"> (R U R' U') (R U R' U')</span> f' </strong></td>
+    <td>Just repeat the RUR'U' trigger 2 times</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><img src="cases/oll39.gif" width="68" height="68" /></td>
+    <td><strong>f ' <span class="style1">(L' U' L U)</span> f </strong></td>
+    <td>This is the reflection of P. You are just doing the algorithm with your left hand. It should be quiet easy to transfer it with just a little bit of practice. <br />
+    I execute it more like f' L' U' L U y' r </td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td><img src="cases/oll18.gif" width="68" height="68" /></td>
+    <td><strong>F'  <span class="style1">(L' U' L U)</span></strong>  <span class="style1">(L' U' L U)</span><strong> F </strong></td>
+    <td>This is reflection of Case 2. Just do the trigger twice. </td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td><img src="cases/oll21.gif" width="68" height="68" /></td>
+    <td><strong>[F  <span class="style1">(R U R' U') </span>F'] U [F <span class="style1">(R U R' U')</span> F' ]</strong></td>
+    <td>This is just T, twice, with a U in between. </td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><img src="cases/oll22.gif" width="68" height="68" /></td>
+    <td><strong>[F'  <span class="style1">(L' U' L U)</span>  F] y [F  <span class="style1">(R U R' U')</span> F']<br /> 
+    y <span class="style4">(</span><span class="style17">r</span><span class="style4"> U R' U)</span><span class="style3">(R' F R F')</span> R U2 r' </strong></td>
+    <td>Reflection of case 1 followed by case 1, with a y rotation in between, and it comes very natural in that position I find. <br /> Second algorithm was suggested to me and I kinda like it. </td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><img src="cases/oll3.gif" width="68" height="68" /></td>
+    <td><strong>[f  <span class="style1">(R U R' U')</span> f'] U [F <span class="style1">(R U R' U')</span> F' ] </strong></td>
+    <td>This is just case4 followed by case 1, with a U in between </td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td><img src="cases/oll4.gif" width="68" height="68" /></td>
+    <td><strong>[f  <span class="style1">(R U R' U')</span> f'] U' [F<span class="style1"> (R U R' U')</span> F' ] </strong></td>
+    <td>This is case 10 with a U' instead of U </td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td><img src="cases/oll2.gif" width="68" height="68" /></td>
+    <td><strong> [F<span class="style1"> (R U R' U')</span> F' ] [f<span class="style1"> (R U R' U')</span> f']</strong></td>
+    <td>This is T (case 1) followed by P (case 4)</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td><img src="cases/oll50.gif" width="68" height="68" /></td>
+    <td><strong>[f<span class="style1"> (R U R' U')</span> f'] [F <span class="style1">(R U R' U')</span> F']<br />
+    R U2' R2' U' R2 U' R2' U2 R</strong></td>
+    <td>This is just like the above, but T (case1) and P (case 4) are done in reverse order! <br />
+      You should really learn the second algorithm though, its much faster. Its the one everyone fast uses too.</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td><img src="cases/oll29.gif" width="68" height="68" /></td>
+    <td><strong>(r U r') <span class="style1">(R U R' U')</span> (r U' r') </strong></td>
+    <td>This algorithm is very easy to remember </td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td><img src="cases/oll30.gif" width="68" height="68" /></td>
+    <td><strong>(l' U' l) <span class="style1">(L' U' L U)</span> (l' U l) </strong></td>
+    <td>Reflection of case 14</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td><img src="cases/oll44.gif" width="68" height="68" /></td>
+    <td><strong>R' [F <span class="style1">(R U R' U')</span> F'] U R </strong></td>
+    <td>Look how neatly case 1 (T) is placed in middle there :) </td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td><img src="cases/oll57.gif" width="68" height="68" /></td>
+    <td><span class="style1">(R U R' U')</span><strong> M' (U R U' r')</strong></td>
+    <td>I find this one pretty easy to remember too and it flows very nicely. It doesn't come up too often though </td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td><img src="cases/oll8.gif" width="68" height="68" /></td>
+    <td><strong>M U <span class="style1">(R U R' U')</span> M2 (U R U' r')</strong></td>
+    <td>This almost never comes up, so skip it if you want. But its not too bad. Note the last part is the same as in case 17.</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td><img src="cases/oll10.gif" width="68" height="68" /></td>
+    <td><strong>F <span class="style1">(R U R' U')</span> R F' <span class="style1">(</span><span class="style17">r </span><span class="style1">U R' U'</span><span class="style1">)</span> r'</strong></td>
+    <td>The second trigger in brackets is almost the RUR'U' trigger </td>
+  </tr>
+</table>
+<p>Second: Learn another trigger, <span class="style3">(R' F R F')</span></p>
+<table width="100%">
+  <tr>
+    <td width="32" bgcolor="#D9E7FF">Case</td>
+    <td width="71" bgcolor="#D9E7FF">Diagram</td>
+    <td width="224" bgcolor="#D9E7FF">Algorithm</td>
+    <td width="461" bgcolor="#D9E7FF">Comment</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td><img src="cases/oll42.gif" width="68" height="68" /></td>
+    <td><span class="style1">(R U R' U')</span> <span class="style3">(R' F R F')</span> </td>
+    <td>Just the two triggers is all it takes :) </td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td><img src="cases/oll52.gif" width="68" height="68" /></td>
+    <td><span class="style1">(</span><span class="style17">r</span><span class="style1"> U R' U')</span> <span class="style3">(</span><span class="style17">r'</span><span class="style3"> F R F')</span> </td>
+    <td>Same as T2 (case 20) but the first R's are actually double layer R turn (r) </td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td><img src="cases/oll53.gif" width="68" height="68" /></td>
+    <td><strong>F' <span class="style1">(</span><span class="style17">r</span><span class="style1"> U R' U')</span> (r' F R ) </strong></td>
+    <td>Same as chameleon (case21) , with the last F' moved to the front! </td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td><img src="cases/oll46.gif" width="68" height="68" /></td>
+    <td><strong>R' U' <span class="style3">(R' F R F')</span> U R</strong></td>
+    <td>There are some setup moves involved here. Note how U R &quot;undoes&quot; the R' U' you do in beginning</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td><img src="cases/oll1.gif" width="68" height="68" /></td>
+    <td><strong>(R U2 R') <span class="style3">(R' F R F')</span> U2 <span class="style3">(R' F R F')</span></strong> </td>
+    <td>The R' R' is obviously made as a giant R2 in the actual execution </td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td><img src="cases/oll40.gif" width="68" height="68" /></td>
+    <td><strong>(R U2 R') <span class="style3">(R' F R F')</span> (R U2 R') </strong></td>
+    <td>Incredibly easy to remember, and fast to execute. Again, the R' R' is made as a big R2. Note first part is the same as in case 24</td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td><img src="cases/oll7.gif" width="68" height="68" /></td>
+    <td><strong>M U <span class="style1">(R U R' U')</span> M' <span class="style3">(R' F R F')</span></strong> <strong><br />
+    </strong></td>
+    <td>pretty easy to remember. Also note how similar this algorithm is to case 17 </td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td><img src="cases/oll15.gif" width="68" height="68" /></td>
+    <td><span class="style3"><strong>(R' F <span class="style17">R'</span> F')</strong></span><strong> R2 U2 y <span class="style3">(R' F R F')</span></strong></td>
+    <td>Be warned that the first trigger is not really R'FRF' trigger. But almost... the second R turn in it is R', not R </td>
+  </tr>
+</table>
+<p>You now know almost half of the OLL's!<br />
+Third: A very similar trigger to the first trigger. It is <span class="style4">(R U R' U)</span>. Only difference is that the last move is a U not a U' </p>
+<table width="100%">
+  <tr>
+    <td width="32" bgcolor="#D9E7FF">Case</td>
+    <td width="71" bgcolor="#D9E7FF">Diagram</td>
+    <td width="254" bgcolor="#D9E7FF">Algorithm</td>
+    <td width="435" bgcolor="#D9E7FF">Comment</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td><img src="cases/oll47.gif" width="68" height="68" /></td>
+    <td><span class="style4">(R U R' U)</span><strong> (R U' R' U') <span class="style3">(R' F R F')</span></strong> </td>
+    <td>Very quick to perform. Second part is same as first, but with U's instead of Us</td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td><img src="cases/oll48.gif" width="68" height="68" /></td>
+    <td><span class="style4"><strong>(L' U' L U') </strong></span><strong>(L' U L U) <span class="style3">(L F' L' F)</span></strong></td>
+    <td>The reflection. Should be easy enough to mirror it.</td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td><img src="cases/oll12.gif" width="68" height="68" /></td>
+    <td> <span class="style4">(R U R' U)</span><strong> R d' R U' R' F'<br />
+    (R' U' R U') R' d R' U R B<br />
+    </strong></td>
+    <td>I use the first one, but both are very good, and its definitely a judgement call per individual </td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td><img src="cases/oll5.gif" width="68" height="68" /></td>
+    <td><span class="style4">(R U R' U)</span> <span class="style3">(R' F R F')</span><strong> U2 <span class="style3">(R' F R F')</span></strong></td>
+    <td>Easy to remember. Note similarity to case 24.</td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td><img src="cases/oll6.gif" width="68" height="68" /></td>
+    <td><strong>[F <span class="style4">(R U R' U)</span> F'] y' U2 <span class="style3">(R' F R F')</span></strong> </td>
+    <td>Easy. This is ALMOST case #1, but with that modified trigger. I execute this by doing y' R' U2 instead of the F' y' U2. But thats a detail. </td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td><img src="cases/oll25.gif" width="68" height="68" /></td>
+    <td><strong>r' U2 <span class="style4">(R U R' U)</span> r</strong></td>
+    <td>Easy.</td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td><img src="cases/oll19.gif" width="68" height="68" /></td>
+    <td><span class="style4">(</span><span class="style17">r</span><span class="style4"> U R' U)</span><strong> R U2 r'</strong></td>
+    <td>slight variation of the trigger and then easy finish </td>
+  </tr>
+</table>
+<p>Fourth: Sune and its derivatives</p>
+<table width="100%">
+  <tr>
+    <td width="32" bgcolor="#D9E7FF">Case</td>
+    <td width="71" bgcolor="#D9E7FF">Diagram</td>
+    <td width="273" bgcolor="#D9E7FF">Algorithm</td>
+    <td width="413" bgcolor="#D9E7FF">Comment</td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td><img src="cases/oll55.gif" width="68" height="68" /></td>
+    <td><span class="style4">(R U R' U)</span><strong> R U2 R' </strong></td>
+    <td>Very quick OLL. Look what happens to one of the F2L pairs as you execute it. <br />
+    The whole algorithm is just: Take out a pair, move it over, insert it back. It's also very similar to case 34</td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td><img src="cases/oll54.gif" width="68" height="68" /></td>
+    <td><strong>R U2 R' U' R U' R' </strong></td>
+    <td>This algorithm is the same as case 35 in philosophy. Track the F2L pair.</td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td><img src="cases/oll32.gif" width="68" height="68" /></td>
+    <td><strong> [ R' U2 <span class="style4">(R U R' U)</span> R] y [F <span class="style1">(R U R' U')</span> F']      
+      <br />
+      <span class="style3">(R' F R F') (R' F R F')</span> <span class="style1">(R U R' U')</span> (R U R')
+    </strong></td>
+    <td>First part is just the sune from different angle (similar to case 33), and second part is the T OLL.<br />
+      The second algorithm was suggested to me by someone, and I kinda like it even more! To do the R'FRF' parts, I actually make a cube rotation x and then execute them as R'URU'. </td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td><img src="cases/oll31.gif" width="68" height="68" /></td>
+    <td><strong>[<span class="style4">(R U R' U)</span> R U2 R'] [F (<span class="style1">R U R' U'</span>) F']</strong></td>
+    <td>This is basically the Sune followed by the T(case 1)</td>
+  </tr>
+</table>
+<p>Algs that you just learn because they are incredibly fast, but don't really fit with what I've been doing above. There is 18 more of those </p>
+<table width="100%">
+  <tr>
+    <td width="38" bgcolor="#D9E7FF">Case</td>
+    <td width="69" bgcolor="#D9E7FF">Diagram</td>
+    <td width="456" bgcolor="#D9E7FF">Algorithm</td>
+    <td width="1053" bgcolor="#D9E7FF">Comment</td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td><img src="cases/oll13.gif" width="68" height="68" /></td>
+    <td><strong><span class="style4"><span class="style17">(r</span> U R' U)</span> (R U' R' U) R U2' r'</strong></td>
+    <td>Incredibly quick to execute. I love this algorithm. When you execute it, it feels like the two fingers on right and left hand are in battle, flicking towards each other the top layer like crazy :) </td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td><img src="cases/oll14.gif" width="68" height="68" /></td>
+    <td><strong>l' U' L U' L' U L U' L' U2 l<br />
+      y2 r' U' R U' R' U R U' R' U2 r</strong></td>
+    <td>I execute one or the other depending on which angle I run into the OLL in. It saves me a y2 rotation. First one is just reflection of case 39.</td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td><img src="cases/oll26.gif" width="68" height="68" /></td>
+    <td><strong>r U2 R' U' R U' r'</strong></td>
+    <td>quick alg. Note how similar it is to 36! Just replace R-&gt;r. Uncanny!</td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td><img src="cases/oll37.gif" width="68" height="68" /></td>
+    <td><strong>F R U' R' U' R U R' F'</strong></td>
+    <td>very quick. Note the Y permutation starts with this exactly</td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td><img src="cases/oll20.gif" width="68" height="68" /></td>
+    <td><strong>r' U' R U' R' U2 r</strong></td>
+    <td>quick, and very similar to sunes (cases 34-38)</td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td><img src="cases/oll56.gif" width="68" height="68" /></td>
+    <td><strong>M' U M U2 M' U M </strong></td>
+    <td>easy. Look what happens to one of the cross edges. You take it out, do a U2, and put it back from the other side. </td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td><img src="cases/oll45.gif" width="68" height="68" /></td>
+    <td><strong>(R U R2 U') (R' F) (R U) (R U') F'<br />
+    (<span class="style1">R U R' U'</span>) x D' R' U R U' D x'</strong></td>
+    <td>I cannot decide which one is better... you have to pick for yourself </td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td><img src="cases/oll27.gif" width="68" height="68" /></td>
+    <td><strong> F U R U' R2 F' R (U R U' R')</strong></td>
+    <td>note how the last part just inserts an F2L pair back.</td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td><img src="cases/oll28.gif" width="68" height="68" /></td>
+    <td><strong>R' F R U R' F' R y' (R U' R')</strong></td>
+    <td>pretty nice alg. Last part just inserts F2L pair</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td><img src="cases/oll51.gif" width="68" height="68" /></td>
+    <td><strong>R2 [D (R' U2) R] [D' (R' U2) R']</strong></td>
+    <td>I don't like this alg too much. Note the repeating structure. </td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td><img src="cases/oll9.gif" width="68" height="68" /></td>
+    <td><strong>R' U2 R2 U R' U R U2 x' U' R' U</strong></td>
+    <td>... i don't like this one too much</td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td><img src="cases/oll35.gif" width="68" height="68" /></td>
+    <td><strong>R U B' U' R' U R B R'<br />
+    R d L' d' R' U R B R'</strong></td>
+    <td>The B' is very clumsily done. Try do it with your thumb, then the rest is very quick. I use the second algorithm, but I'm not sure which one is better </td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td><img src="cases/oll36.gif" width="68" height="68" /></td>
+    <td><strong>R' U' F U R U' R' F' R<br />
+    y2 L' d' R d L U' L' B' L</strong></td>
+    <td>I use the second one, but I think the first may be a little better. </td>
+  </tr>
+  <tr>
+    <td>52</td>
+    <td><img src="cases/oll43.gif" width="68" height="68" /></td>
+    <td><strong>R B' R' U' R U B U' R' <br />
+    y2 L F' <span class="style1">(L' U' L U)</span> F U' L'</strong></td>
+    <td>Try to use the thumb for the B' too, i think. Pretty clumsy as well, but after it its quick </td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td><img src="cases/oll16.gif" width="68" height="68" /></td>
+    <td><strong>R' F R2 B' R2' F' R2 B R' </strong></td>
+    <td>Again, I do the B' with my thumb. Awkward alg. ew.</td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td><img src="cases/oll34.gif" width="68" height="68" /></td>
+    <td><span class="style1">(R U R' U')</span><strong> R U' R' F' U' F (R U R')<br />
+[F <span class="style1">(R U R' U')</span> F'] U2 [<span class="style1">(R U R' U')</span><span class="style3"> (R' F R F')</span>] </strong></td>
+    <td>flows nicely, no regrips. The second one is longer but easier to remember: It is just case 1 followed by U2 and case 20!</td>
+  </tr>
+  <tr>
+    <td>55</td>
+    <td><img src="cases/oll33.gif" width="68" height="68" /></td>
+    <td><strong>(R2 U R' B' R) U' (R2 U R B R')<br />
+      <br />
+    </strong></td>
+    <td>Ok the first R2 is executed in a weird way. You overgrip the R slice to do the R2 both times. After doing the R2's you have to be able to the U with a finger flick without a regrip. The alg is actually quite fast. </td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td><img src="cases/oll23.gif" width="68" height="68" /></td>
+    <td><strong>(R' U' R) y' x' (R U') (R' F) (R U R')<br />
+        <span class="style1">(R U R' U')</span> R' F R2 U R' U' F'<br />
+      </strong></td>
+    <td>after the ugly y'x' the alg is incredibly fast. I love executing that part. I give a second alternative in case someone wants something else because they dont like the rotation. (Note that the second alg looks very much like the T PLL :) ) </td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td><img src="cases/oll24.gif" width="68" height="68" /></td>
+    <td><strong>R U R' y R' F R U' R' F' R<br />
+  <span class="style4">(R U R' U)</span><span class="style3"> (R' F R F')</span> R U2 R'<br />
+      <br />
+    </strong></td>
+    <td>I try to use the first one. The second one was suggested to me and its incredibly easy to memorize, but I don't think its AS fast as say the first one. </td>
+  </tr>
+</table>
+<p>&nbsp; </p>
+</body>
+</html>
+	</div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3698471-3");
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

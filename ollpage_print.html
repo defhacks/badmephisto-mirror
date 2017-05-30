@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+function suggestAlg(){
+var c = document.getElementById('casenum').value;
+var a = document.getElementById('alg').value;
+if (c == "" || a == "") {
+	//invalid comment
+	$("#out").hide();
+	document.getElementById('out').innerHTML="     You left stuff blank. Enter the case number and alg";
+	$("#out").fadeIn("slow");
+} else {
+	$("#out").fadeOut("fast");
+	$.post('suggestalg.php', {
+		casenum: c,
+		alg: a
+	}, function(data) {
+		document.getElementById('casenum').value="";
+		document.getElementById('alg').value="";
+		$("#out").hide();
+		document.getElementById('out').innerHTML="     Thank you! ";
+		$("#out").fadeIn("slow");
+	});
+}
+}
+</script>
+
+<title>Badmephisto's Guide to OLL's</title>
+
+<style type="text/css">
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	td {
+	padding: 0px;
+	margin: 0px;
+	}
+	.style1 {
+		border-bottom: solid 1px black;
+		font-weight: bold;
+	}
+	.style2 {
+border-bottom: solid 1px black;
+		font-weight: bold;
+	}
+	.style3 {
+border-bottom: solid 1px black;
+		font-weight: bold;
+	}
+	.style4 {
+border-bottom: solid 1px black;
+		font-weight: bold;
+	}
+	.style17 {border-bottom: solid 1px black; }
+.style18 {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom: solid 1px black;
+}
+</style>
+</head>
+
+<body>
+<table width="100%" border="0">
+  <tr>
+    <td colspan="3"><div align="center" class="style18">RUR'U' trigger group </div></td>
+    <td colspan="3"><div align="center" class="style18">RUR'U trigger group </div></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><img src="cases/oll41.gif"/></td>
+    <td><strong>F <span class="style1">(R U R' U')</span> F'</strong></td>
+    <td width="32">28</td>
+    <td width="71"><img src="cases/oll47.gif" width="68" height="68" /></td>
+    <td width="273"><span class="style4">(R U R' U)</span><strong> (R U' R' U') <span class="style3">(R' F R F')</span></strong> </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><img src="cases/oll17.gif"/></td>
+    <td><strong>F <span class="style1">(R U R' U')  (R U R' U')</span> F'</strong></td>
+    <td>29</td>
+    <td><img src="cases/oll48.gif" width="68" height="68" /></td>
+    <td><span class="style4"><strong>(L' U' L U') </strong></span><strong>(L' U L U) <span class="style3">(L F' L' F)</span></strong></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><img src="cases/oll49.gif"/></td>
+    <td><strong>F <span class="style1">(R U R' U')  (R U R' U') (R U R' U')</span> F'<br />
+      y R' U' R U' R' U R U' R' U2 R </strong></td>
+    <td>30</td>
+    <td><img src="cases/oll12.gif" width="68" height="68" /></td>
+    <td><span class="style4">(R U R' U)</span><strong> R d' R U' R' F'<br />
+      R' U' R U' R' d R' U R B<br />
+    </strong></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td><img src="cases/oll38.gif"/></td>
+    <td><strong>f <span class="style1">(R U R' U')</span> f' </strong></td>
+    <td>31</td>
+    <td><img src="cases/oll5.gif" width="68" height="68" /></td>
+    <td><span class="style4">(R U R' U)</span> <span class="style3">(R' F R F')</span><strong> U2 <span class="style3">(R' F R F')</span></strong></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><img src="cases/oll11.gif"/></td>
+    <td><strong>f<span class="style1"> (R U R' U') (R U R' U')</span> f' </strong></td>
+    <td>32</td>
+    <td><img src="cases/oll6.gif" width="68" height="68" /></td>
+    <td><strong>[F <span class="style4">(R U R' U)</span> F'] y' U2 <span class="style3">(R' F R F')</span></strong> </td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><img src="cases/oll39.gif"/></td>
+    <td><strong>f ' <span class="style1">(L' U' L U)</span> f </strong></td>
+    <td>33</td>
+    <td><img src="cases/oll25.gif" width="68" height="68" /></td>
+    <td><strong>r' U2 <span class="style4">(R U R' U)</span> r</strong></td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td><img src="cases/oll18.gif"/></td>
+    <td><strong>F' <span class="style1">(L' U' L U)</span></strong> <span class="style1">(L' U' L U)</span><strong> F </strong></td>
+    <td>34</td>
+    <td><img src="cases/oll19.gif" width="68" height="68" /></td>
+    <td><span class="style4">(</span><span class="style17">r</span><span class="style4"> U R' U)</span><strong> R U2 r'</strong></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td><img src="cases/oll21.gif"/></td>
+    <td><strong>[F <span class="style1">(R U R' U') </span>F'] U [F <span class="style1">(R U R' U')</span> F' ] </strong></td>
+    <td width="32">35</td>
+    <td width="71"><img src="cases/oll55.gif"/></td>
+    <td width="273"><span class="style4">(R U R' U)</span><strong> R U2 R' </strong></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><img src="cases/oll22.gif"/></td>
+    <td><strong>[F' <span class="style1">(L' U' L U)</span> F'] y [F <span class="style1">(R U R' U')</span> F']</strong></td>
+    <td>36</td>
+    <td><img src="cases/oll54.gif"/></td>
+    <td><strong>R U2 R' U' R U' R' </strong></td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td><img src="cases/oll3.gif"/></td>
+    <td><strong>[f <span class="style1">(R U R' U')</span> f'] U [F <span class="style1">(R U R' U')</span> F' ] </strong></td>
+    <td>37</td>
+    <td><img src="cases/oll32.gif"/></td>
+    <td><strong> [ R' U2 <span class="style4">(R U R' U)</span> R] y [F <span class="style1">(R U R' U')</span> F']<br />
+          <br />
+    </strong></td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td><img src="cases/oll4.gif"/></td>
+    <td><strong>[f <span class="style1">(R U R' U')</span> f'] U' [F<span class="style1"> (R U R' U')</span> F' ] </strong></td>
+    <td>38</td>
+    <td><img src="cases/oll31.gif"/></td>
+    <td><strong>[<span class="style4">(R U R' U)</span> R U2 R'] [F (<span class="style1">R U R' U'</span>) F']</strong></td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td><img src="cases/oll2.gif"/></td>
+    <td><strong> [F<span class="style1"> (R U R' U')</span> F' ] [f<span class="style1"> (R U R' U')</span> f']</strong></td>
+    <td colspan="3"><div align="center" class="style18">Unassigned</div></td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td><img src="cases/oll50.gif"/></td>
+    <td><strong>[f<span class="style1"> (R U R' U')</span> f'] [F <span class="style1">(R U R' U')</span> F']<br />
+      R U2' R2' U' R2 U' R2' U2 R</strong></td>
+    <td width="32">39</td>
+    <td width="71"><img src="cases/oll13.gif"/></td>
+    <td width="273"><strong>r U R' U R U' R' U R U2' r'</strong></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td><img src="cases/oll29.gif"/></td>
+    <td><strong>(r U r') <span class="style1">(R U R' U')</span> (r U' r') </strong></td>
+    <td>40</td>
+    <td><img src="cases/oll14.gif"/></td>
+    <td><strong>l' U' L U' L' U L U' L' U2 l<br />
+      y2 r' U' R U' R' U R U' R' U2 r</strong></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td><img src="cases/oll30.gif"/></td>
+    <td><strong>(l' U' l) <span class="style1">(L' U' L U)</span> (l' U l) </strong></td>
+    <td>41</td>
+    <td><img src="cases/oll26.gif"/></td>
+    <td><strong>r U2 R' U' R U' r'</strong></td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td><img src="cases/oll44.gif"/></td>
+    <td><strong>R' [F <span class="style1">(R U R' U')</span> F'] U R </strong></td>
+    <td>42</td>
+    <td><img src="cases/oll37.gif"/></td>
+    <td><strong>F R U' R' U' R U R' F'</strong></td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td><img src="cases/oll57.gif"/></td>
+    <td><span class="style1">(R U R' U')</span><strong> M' (U R U' r')</strong></td>
+    <td>43</td>
+    <td><img src="cases/oll20.gif"/></td>
+    <td><strong>r' U' R U' R' U2 r</strong></td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td><img src="cases/oll8.gif"/></td>
+    <td><strong>M U <span class="style1">(R U R' U')</span> M2 (U R U' r')</strong></td>
+    <td>44</td>
+    <td><img src="cases/oll56.gif"/></td>
+    <td><strong>M' U M U2 M' U M </strong></td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td><img src="cases/oll10.gif"/></td>
+    <td><strong>F <span class="style1">(R U R' U')</span> R F' <span class="style1">(</span><span class="style17">r </span><span class="style1">U R' U'</span><span class="style1">)</span> r'</strong></td>
+    <td>45</td>
+    <td><img src="cases/oll45.gif"/></td>
+    <td><strong>(R U R'2 U') (R' F) (R U) (R U') F'<br />
+      (<span class="style1">R U R' U'</span>) x D' R' U R U' D x'</strong></td>
+  </tr>
+  <tr>
+    <td colspan="3"><div align="center" class="style18">R' F R F' trigger group </div></td>
+    <td>46</td>
+    <td><img src="cases/oll27.gif"/></td>
+    <td><strong> F U R U' R2 F' R (U R U' R')</strong></td>
+  </tr>
+  <tr>
+    <td width="32">20</td>
+    <td width="71"><img src="cases/oll42.gif"/></td>
+    <td width="254"><span class="style1">(R U R' U')</span> <span class="style3">(R' F R F')</span> </td>
+    <td>47</td>
+    <td><img src="cases/oll28.gif"/></td>
+    <td><strong>R' F R U R' F' R y' R U' R'</strong></td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td><img src="cases/oll52.gif"/></td>
+    <td><span class="style1">(</span><span class="style17">r</span><span class="style1"> U R' U')</span> <span class="style3">(</span><span class="style17">r'</span><span class="style3"> F R F')</span> </td>
+    <td>48</td>
+    <td><img src="cases/oll51.gif"/></td>
+    <td><strong>R2 D R' U2 R D' R' U2 R'</strong></td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td><img src="cases/oll53.gif"/></td>
+    <td><strong>F' <span class="style1">(</span><span class="style17">r</span><span class="style1"> U R' U')</span> (r' F R ) </strong></td>
+    <td>49</td>
+    <td><img src="cases/oll9.gif"/></td>
+    <td><strong>R' U2 R2 U R' U R U2 x' U' R' U</strong></td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td><img src="cases/oll46.gif"/></td>
+    <td><strong>R' U' <span class="style3">(R' F R F')</span> U R</strong></td>
+    <td>50</td>
+    <td><img src="cases/oll35.gif"/></td>
+    <td><strong>R U B' U' R' U R B R'<br />
+      R d L' d' R' U R B R'</strong></td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td><img src="cases/oll1.gif"/></td>
+    <td><strong>R U2 R' <span class="style3">(R' F R F')</span> U2 <span class="style3">(R' F R F')</span></strong> </td>
+    <td>51</td>
+    <td><img src="cases/oll36.gif"/></td>
+    <td><strong>R' U' F U R U' R' F' R<br />
+      y2 L' d' R d L U' L' B' L</strong></td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td><img src="cases/oll40.gif"/></td>
+    <td><strong>(R U2 R') <span class="style3">(R' F R F')</span> (R U2 R') </strong></td>
+    <td>52</td>
+    <td><img src="cases/oll43.gif"/></td>
+    <td><strong>R B' R' U' R U B U' R' <br />
+      y2 L F' <span class="style2">(L' U' L U)</span> F U' L'</strong></td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td><img src="cases/oll7.gif"/></td>
+    <td><strong>M U <span class="style1">(R U R' U')</span> M' <span class="style3">(R' F R F')</span></strong> <strong><br />
+    </strong></td>
+    <td>53</td>
+    <td><img src="cases/oll16.gif"/></td>
+    <td><strong>R' F R2 B' R2' F' R2 B R' </strong></td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td><img src="cases/oll15.gif"/></td>
+    <td><span class="style3"><strong>R' F R'</strong></span><span class="style17"><strong> F'</strong></span><strong> R2 U2 y <span class="style3">(R' F R F')</span></strong></td>
+    <td>54</td>
+    <td><img src="cases/oll34.gif"/></td>
+    <td><span class="style1">(R U R' U')</span><strong> R U' R' F' U' F R U R'</strong></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>55</td>
+    <td><img src="cases/oll33.gif"/></td>
+    <td><strong>R2 U R' B' R U' R2 U R B R'<br />
+          <br />
+    </strong></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>56</td>
+    <td><img src="cases/oll23.gif"/></td>
+    <td><strong>(R' U' R) y' x' (R U') (R' F) (R U R')<br />
+          <span class="style1">(R U R' U')</span> R' F R2 U R' U' F'<br />
+    </strong></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>57</td>
+    <td><img src="cases/oll24.gif"/></td>
+    <td><strong>R U R' y R' F R U' R' F' R<br />
+      (R U R' U) (R' F R F') R U2 R'<br />
+  <br />
+    </strong></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><br />
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp; </p>
+</body>
+</html>

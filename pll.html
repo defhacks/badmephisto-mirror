@@ -1,0 +1,476 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="faq badmephisto rubiks cube main page cubing speedcubing speedsolving fast fridrich method youtube teacher" />
+<meta name="description" content="Badmephisto's cubing website" />
+<title>Badmephisto's Cubing Site: PLL's</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/JavaScript" src="ajaxstuff.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+$("#comments").load("phpdb/pll_comments.txt"); 
+$("#ncb").bind("click", function(){ newComment("pll"); });
+});
+</script>
+
+</head>
+<body>
+<style type="text/css">
+<!--
+.style123 {
+	margin-top: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #003300;
+}
+
+.bomo {
+	border: 0;
+	border-left: solid 5px #9CC8A2;
+}
+
+.bomo:hover {
+	border-left: solid 5px black;
+}
+#iphonec{
+	float: right;
+	margin-right: 10px;
+	width: 250px;
+}
+#fab{
+	float:right;
+	margin-right: 80px;
+	margin-top: 50px;
+}
+.slol {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+img {
+	border: none;
+}
+-->
+</style>
+<div id="header">
+	<table border="0px" width="100%">
+	<tr>
+	<td width="9%">
+	<img src="cubepic.png" id="cubepic" />	</td>
+	<td width="77%">
+    
+    
+      <div id="iphonec"> <a href="https://defhacks.github.io/badmephisto-mirror/iphone/" target="_blank"><img src="headerpics/iphoneapp.png" style="float: left;"/></a><br />
+      <span class="slol">
+      Try my new iPhone app!<br />
+      Forget printable sheets!<br /><br />
+      Contains all my algorithms:<br />
+      - OLL/PLL/2-look<br />
+      - Beginner's method<br />
+      - Notation page<br />
+      </span>
+      </div>
+      
+      <div id="fab">
+      
+      <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2Fbadmephisto%2F120835544626563&amp;width=250&amp;colorscheme=dark&amp;show_faces=false&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:62px;" allowTransparency="true"></iframe>
+      
+      </div>
+      
+	  <div align="right" class="style123">
+	  <div align="center">BADMEPHISTO's CUBING PAGE </div>
+      <div align="center"><a href="http://www.youtube.com/user/badmephisto" target="_blank"><img src="visitmy.png" style="border-style: none"></img></a></div>
+	 </div>
+	</td>
+	<td width="14%">
+	<div id="extlinks" align="right" style="margin-right: 50px;">
+		<img src="headerpics/external.jpg"/><br />
+		<a href="http://www.speedsolving.com/wiki" target="_blank"><img src="headerpics/wiki.jpg" class="bomo"/></a><br />
+	    <a href="http://www.speedsolving.com/forum/index.html" target="_blank"><img src="headerpics/forums.jpg" class="bomo"/></a><br />
+	   <a href="notation.html" target="_blank"><img src="headerpics/notation.jpg" class="bomo"/></a>	</div>	</td>
+	</tr>
+	</table>
+</div>
+<div id="body">
+	<div id="navbar">
+		<ul>
+		<li><a href="index.html"><img src="faq.png" />FAQ</a></li>
+        <li><a href="guide.html"><img src="guide.png" />GUIDE</a></li>
+        <br />
+		<li><a href="cross.html"><img src="cross.png" />CROSS</a></li>
+		<li><a href="f2l.html"><img src="f2l.png" />F2L</a></li>
+		<li><a href="oll.html"><img src="oll.png" />OLL</a></li>
+		<li><a href="pll.html"><img src="pll.png" />PLL</a></li>
+        <br />
+		<li><a href="beg.html" style="font-size: 12px;"><img src="beg.png"/>BEGINNER's</a></li>
+		</ul>
+		
+		<br /><br />
+		<div style="margin-left: 25px;">
+		<script type="text/javascript"><!--
+		google_ad_client = "pub-7310724940682242";
+		/* 120x240, created 2/2/09 */
+		google_ad_slot = "0377999770";
+		google_ad_width = 120;
+		google_ad_height = 240;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+		</div>
+</div>	<div id="commentbox">
+		<h1>Comments disabled.</h1>
+    <p>Permanently. There used to be comments here that people could leave freely, but there were
+    too many trolls who abused the system and left profane messages. Thanks to those who left nice or
+    helpful comments that complemented the site.</p>
+		<div id="comments">
+		</div>
+    
+	</div>	<div id="content">
+		<h1>Permutation of Last Layer (PLL's)</h1>
+		<img src="pll.png" class="leftfloat"/>
+		<p>PLL is the last step of the Fridrich Method. After you finish OLL, pieces on the last layer will need to be permuted (moved around). Find out which diagram indicates how you need to move them around, and apply the algorithm. Before you go off finding which case you have, use U/U'/U2 turns to align as many  pieces as possible. Then one of the diagrams should match what you have.</p>
+		<br />
+		<h2>2look PLL</h2>
+		<img src="2lookPLLscr.jpg" class="leftfloat"/>
+		<p>You need all of the 21 algorithms below to solve this stage in a single step. However, if you are willing to do it in two steps instead, you can use what is called the 2look PLL. You then only have to learn 6 of them (at the expense of speed obviously). Watch my video <a href="http://www.youtube.com/watch?v=S61q3FYVFis" target="_blank">HERE</a> to learn the 2look PLL.</p>
+		
+		<p>Also, <a href="2LookPLL.pdf" target="_blank">here</a> is a printable sheet of all cases and solutions for reference, in pdf format (Thank you Husayn for making and sending me this sheet)</p>
+		
+		<h2>PLL Trainer</h2>
+		<img src="PLLTrainerscr.jpg" class="leftfloat"/>
+		<p>This is a program that I wrote that helps you practice PLLs. It generates a random PLL, and then it times how quickly you can perform it. It keeps track of all of this, gives you averages, etc. To rotate any of the PLL's in the program, just rotate the image in the folder. The program just loads these images when it starts.</p>
+		<p>For full description go <a href="http://www.speedsolving.com/forum/showthread.php?t=2193" target="_blank">here</a></p>
+        <p><a href="Pll_Trainer.zip" target="_blank">DOWNLOAD</a>, <a href="trainerlinux.html" target="_blank">How-to run on Linux (thanks Gopi!)</a></p>
+		
+		<h2>Introduction to my solutions</h2>
+		<p><a href="notation.html" target="_blank">NOTATION LINK</a> to check out notation that you don't know.</p>
+		
+		
+		<p>Difficulty to Learn at each row assumes that you already know all algorithms in all rows above it</p>
+		<p>These algorithms are organized and presented to best aid you in <b>MEMORIZATION</b>. I
+		highlited and grouped the notation that I thought would best help you
+		memorize the algorithms, and i also color coded some very frequent
+		triggers. Also, algorithms that are very close to each other are
+		grouped by background color in the "Difficulty to Learn" column.</p>
+		<p>
+        <p>
+        <a href="pllpat.xls" target="_blank">This (excel sheet link)</a> may help you with pattern recognition for the PLLs. Thank you <a href="http://rishidoshi.blogspot.com/" target="_blank">RiDo</a> for making this!
+        </p>
+		You can go to<a href="http://www.cubewhiz.com/pll.html" target="_blank"> Bob's PLL page</a> and watch his videos on how he executes each algorithm with
+		fingertricks, because many of his and mine are indeed the same, or very
+		similar. [UPDATE: his videos seem to be gone now...] </p>
+		<p><b>The following algorithms are PLLs in the approximate order that I suggest you learn them:</b></p>
+		<h2>Algorithms that I use</h2>	
+        <p>The latter two pdfs may be slightly out of date on 2-3 algorithms.</p>
+		<p><a href="badmephisto-speedcubing-method.pdf" target="_blank">PRINTABLE PAGE (pdf)</a> (thanks Andy! also check out his nice <a href="http://www.kungfoomanchu.com/" target="_blank"> website</a> for more pdfs)</p>
+		<p><a href="pllprint.pdf" target="_blank">ALTERNATIVE PRINTABLE PAGE (pdf)</a> (thank you aaron!)</p>
+		<p><a href="pllprint2.pdf" target="_blank">ALTERNATIVE PRINTABLE PAGE (pdf)</a> that includes descriptions. (thank you karan!)</p>
+		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<style type="text/css">
+a:hover { color: #FFFF00;text-decoration: underline }
+
+.style3 {color: #FFCC00}
+.style4 {
+	color: #00CCFF;
+	font-weight: bold;
+}
+.style5 {color: #33FF00}
+.style6 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style9 {color: #00CC33}
+.style11 {color: #FF00CC}
+.style12 {color: #FF00CC; font-weight: bold; }
+.style13 {color: #CCFFFF}
+.style14 {color: #00CCFF}
+
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"></head>
+<body>
+
+<div style="background-color: #000;">
+<table width="100%" border="1" bordercolor="#003366" cellpadding="1" cellspacing="0">
+  <tbody><tr>
+    <td class="style5" width="8%">Diagram</td>
+    <td class="style5" width="29%">Algorithm</td>
+    <td class="style5" width="4%">Name</td>
+    <td class="style5" width="7%">Chance of Occurence </td>
+    <td class="style5" width="6%">Difficulty to Learn </td>
+    <td class="style5" width="46%">Comment</td>
+  </tr>
+  <tr>
+    <td class="style5"><font size="2" face="Arial"><img src="pll_files/pll01.gif"></font></td>
+    <td class="style4"><font class="style4" size="2" face="Arial">x [<span class="style4">(R' U R') </span></font><span class="style5"><font size="2" face="Arial">D2</font></span><font class="style4" size="2" face="Arial">] [</font><span class="style4"><font size="2" face="Arial">(R U' R')</font></span><span class="style5"><font size="2" face="Arial"> D2</font></span><font class="style4" size="2" face="Arial">] R2 </font></td>
+    <td class="style12"><div align="center">A (a)</div></td>
+    <td class="style3"><div align="center">1/18</div></td>
+    <td class="style6">XXX</td>
+    <td class="style5">The
+algorithm has a little bit of a symmetry to it. I have a very weird way
+to memorize this algorithm tracking the two corners in UBR and UFR
+around the cube as I do it. But I know that many of my friends do it
+differently. Find what suits you best, it is not too hard or long. </td>
+  </tr>
+  <tr>
+    <td class="style5"><font size="2" face="Arial"><img src="pll_files/pll02.gif"></font></td>
+    <td class="style4"><font class="style4" size="2" face="Arial">x' [(R U' R) </font><span class="style5"><font size="2" face="Arial">D2</font></span><font class="style4" size="2" face="Arial">] [(R' U R) </font><span class="style5"><font size="2" face="Arial">D2</font></span><font class="style4" size="2" face="Arial">] R2 </font></td>
+    <td class="style11"><div align="center">A (b) </div></td>
+    <td class="style3"><div align="center">1/18</div></td>
+    <td class="style6">XX</td>
+    <td class="style5">This
+is the exact same type of motion you do in A(a). If you memorized it by
+motions instead of notation, you should be able to do this one without
+too many problems.</td>
+  </tr>
+  <tr>
+    <td class="style5"><img src="pll_files/pll06.gif" width="76" height="76"></td>
+    <td class="style4"><font class="style4" size="2" face="Arial"><span class="style9">[R U']</span> <span class="style3">[R U] </span><span class="style3">[R U]</span> </font><span class="style9"><font size="2" face="Arial">[R U']</font></span><font class="style4" size="2" face="Arial"> R' U' R2</font></td>
+    <td class="style11"><div align="center">U (b) </div></td>
+    <td class="style3"><div align="center">1/18</div></td>
+    <td class="style6">X</td>
+    <td class="style5">Note
+how the algorithm is basically always R and then U' U U U' in that
+symmetrical order accompanying the R, and lastly R' and fix up rest by
+aligning pieces. </td>
+  </tr>
+  <tr>
+    <td class="style5"><img src="pll_files/pll07.gif" width="76" height="76"></td>
+    <td class="style4"><font class="style4" size="2" face="Arial">R2 U </font><span class="style6"><font size="2" face="Arial">[R U R' U']</font></span><font class="style4" size="2" face="Arial"> (R' U') (R' U R')</font></td>
+    <td class="style11"><div align="center">U (a) </div></td>
+    <td class="style3"><div align="center">1/18</div></td>
+    <td class="style6">X</td>
+    <td class="style5">The
+way I remember it: R2 U, then the RUR'U' trigger, then the last two
+letters of the RUR'U' trigger, then do R' and fix up rest by aligning
+pieces and putting them to their right positions. </td>
+  </tr>
+  <tr>
+    <td class="style5"><img src="pll_files/pll05.gif" width="77" height="77"></td>
+    <td class="style4"><span class="style5"><font size="2" face="Arial">M2</font></span><font size="2" face="Arial"> U <span class="style5">M2</span> U2 <span class="style5">M2</span> U <span class="style5">M2 </span></font></td>
+    <td class="style11"><div align="center">H</div></td>
+    <td class="style3"><div align="center">1/72</div></td>
+    <td class="style6">X</td>
+    <td class="style5">A very easy to remember algorithm. Note how the M2's always alternate, and in between you simply have just U, U2, U </td>
+  </tr>
+  <tr>
+    <td class="style5"><font size="2" face="Arial"><img src="pll_files/pll10.gif"></font></td>
+    <td class="style4"><span class="style6"><font size="2" face="Arial">[R U R' U'] </font></span><font size="2" face="Arial"><span class="style11">[R' F] </span>[R2 U' R']<span class="style3"> U'</span> <span class="style13">[R U R' F']</span></font></td>
+    <td class="style11"><div align="center">T</div></td>
+    <td class="style3"><div align="center">1/18</div></td>
+    <td class="style6" bgcolor="#020d3e">XX</td>
+    <td class="style5">I
+find it easy to learn this algorithm by tracking F2L pairs around the
+cube.RUR'U' takes out a pair. R'F hides it and takes the other pair out
+to the top layer. R2U'R' aligns this pair with the whites and hides
+that pair. Now all the pairs are hidden from the top layer. Now we do
+U' on the Top Layer. Finally RUR'F' takes the second pair out and
+aligns it with the whites again, and restores the First Two Layers. </td>
+  </tr>
+  <tr>
+    <td class="style5"><font size="2" face="Arial"><img src="pll_files/pll09.gif"></font></td>
+    <td class="style4"><span class="style13"><font size="2" face="Arial">[R U R' F']</font></span><font size="2" face="Arial"> {<span class="style6">[R U R' U'] </span><span class="style11">[R' F] </span>[R2 U' R']<span class="style3"> U'</span>}</font></td>
+    <td class="style11"><div align="center">J (b) </div></td>
+    <td class="style3"><div align="center">1/18</div></td>
+    <td class="style6" bgcolor="#020d3e">X</td>
+    <td class="style5">Notice
+that this is EXACTLY the same algorithm as the one above but the RUR'F'
+from the end was now moved to the beginning! So just do RUR'F' and then
+start doing the T permutation (above) until you see that the cube is
+solved! </td>
+  </tr>
+  <tr>
+    <td class="style5"><font size="2" face="Arial"><img src="pll_files/pll21.gif"></font></td>
+    <td class="style4"><font size="2" face="Arial">F R U' R' <span class="style3">U'</span> <span class="style13">[R U R' F']</span> {<span class="style6">[R U R' U']</span> <span class="style3">[R' F R F']</span>}</font></td>
+    <td class="style11"><div align="center">Y</div></td>
+    <td class="style3"><div align="center">1/18</div></td>
+    <td class="style6" bgcolor="#020d3e">XX</td>
+    <td class="style5">Again
+I find it helpful to see how F2L pairs move around for this algorithm.
+F brings an F2L pair to the top, RU'R' inserts that pair back to the
+middle. Now again as before, all F2L is again intact, but slightly
+messed up. Then U' is done as in T permutation, and then RUR'F' is
+AGAIN used to take that pair and insert it back where it was before.
+The result will leave you with an OLL, which after when you fix using
+the appropritate algorithm, you will be left with Ypermutation at the
+end. Note that the OLL is very easy: It takes one pair out to top
+layer, and inserts it back a different way (in particular, using R'FRF')</td>
+  </tr>
+  <tr>
+    <td class="style5"><font size="2" face="Arial"><img src="pll_files/pll11.gif"></font></td>
+    <td class="style4"><span class="style9"><font size="2" face="Arial">[R' U2 R U2]</font></span><font size="2" face="Arial"> <span class="style12">[R' F]</span> <span class="style6">[R U R' U']</span> [R' F'] R2 U'</font></td>
+    <td class="style11"><div align="center">R (b) </div></td>
+    <td class="style3"><div align="center">1/18</div></td>
+    <td class="style6" bgcolor="#2c1032">XX</td>
+    <td class="style5">Again
+for this one I find it easiest to track an F2L pair. Remember the first
+part using just notation because it is easy. After R'F you have an F2L
+pair on the bottom. Then you do RUR'U' trigger. Next, R'F' reconnects
+that F2L pair and alligns it with the whites on top, and R2U' just
+finishes it all up. </td>
+  </tr>
+  <tr>
+    <td class="style5"><font size="2" face="Arial"><img src="pll_files/pll12.gif"></font></td>
+    <td class="style4"><font size="2" face="Arial">[L U2' L' U2'] [L F'] [L' U' L U] [L F] L2' U<br>
+    y2   [R U2 R' U2] [R B'] [R' U' R U] [R B] R2 U  </font></td>
+    <td class="style11"><div align="center">R (a) </div></td>
+    <td class="style3"><div align="center">1/18</div></td>
+    <td class="style6" bgcolor="#2c1032">X</td>
+    <td class="style5">This
+is just the reflection of the above. You need to do the above, but
+using the left hand instead of the right hand. You will be able to
+mirror the R permutation to your left hand after about a weeks practice
+of doing it with your right hand. When it becomes a little bit of
+muscle memory for you it should be really easy to mirror the algorithm
+with the left hand. So if you can't do it right away, just wait a
+little more and get a little more comfortable with R(b). The second algorithm is an alternative that I sometime like to do because it involves the (faster) right hand instead.</td>
+  </tr>
+  <tr>
+    <td class="style5"><font size="2" face="Arial"><img src="pll_files/pll18.gif"></font></td>
+    <td class="style4"><font size="2" face="Arial"> [R' U R' d']<span class="style4"> [R' F']</span> [R2 U' R' U] <span class="style3">[R' F R </span><span class="style5">F</span><span class="style3">]</span></font></td>
+    <td class="style11"><div align="center">V</div></td>
+    <td class="style3"><div align="center">1/18</div></td>
+    <td class="style6" bgcolor="#142314">XXXX</td>
+    <td class="style5">I
+don't really have a great way to memorize this and thats why I rated
+this as a hard algorithm. I kind of just did it until I had it in my
+muscle memory. Note how the R'FRF at the end is ALMOST the common
+R'FRF' trigger, but with F instead of F' at the end. </td>
+  </tr>
+  <tr>
+    <td class="style5"><font size="2" face="Arial"><img src="pll_files/pll13.gif"></font></td>
+    <td class="style4"><font size="2" face="Arial"> [R' <span class="style5">U2</span> R' d'] [R' F'] [R2 U' R' U] [R' F R <span class="style5">U'</span> F]<br>
+      <br>
+    </font></td>
+    <td class="style11"><div align="center">F</div></td>
+    <td class="style3"><div align="center">1/18</div></td>
+    <td class="style6" bgcolor="#142314">X</td>
+    <td class="style5"><p>If
+      you know V permutation, this one is REALLY easy. I highlighted the
+      differences. There is simply one extra U, so instead of R' U R' in the
+      beginning you have R' U U R' (or R' U2 R'), and then you have to undo
+      that U at the end of the algorithm, so there is an extra U' that pops
+      in from nowhere near the end of the algorithm. <br>
+    </p></td>
+  </tr>
+  <tr>
+    <td class="style5"><font size="2" face="Arial"><img src="pll_files/pll17.gif"></font></td>
+    <td class="style4"><font size="2" face="Arial">[R U R'] y' <span class="style5">R2</span> u' <span class="style5">R</span> U' <span class="style5">R'</span> U <span class="style5">R'</span> u <span class="style4">R2</span></font></td>
+    <td class="style11"><div align="center">G (d) </div></td>
+    <td class="style3"><div align="center">1/18</div></td>
+    <td class="style6" bgcolor="#2c1212">XX</td>
+    <td class="style5">RUR'
+takes out a pair. Then rotate the cube, and now the fun part starts. I
+highleted the R rotations so that you can see the pattern better.
+Notice in particular how the U turns are. It is u' U' U u. It has a
+very nice symmetry to it. The R's I remember as follows: Since in
+execution I perfrom the R2 as RR (in clockwise motion), I see them as R
+clockwise twice, and then R counterclockwise twice, and the final R2 is
+just to finish up the algorithm. You are welcome to come up with better
+memory techniques for this things. I know a couple of friends, each
+with different ways of remembering these G perms... </td>
+  </tr>
+  <tr>
+    <td class="style5"><font size="2" face="Arial"><img src="pll_files/pll16.gif"></font></td>
+    <td class="style4"><font size="2" face="Arial">[R' U' R] y <span class="style5">R2</span> u <span class="style5">R'</span> U <span class="style5">R</span> U' <span class="style5">R</span> u' R2</font></td>
+    <td class="style11"><div align="center">G (b) </div></td>
+    <td class="style3"><div align="center">1/18</div></td>
+    <td class="style6" bgcolor="#2c1212">XX</td>
+    <td class="style5">This
+is similar. First take out the pair that is right under the aligned
+2x1x1 block, as in G(d), and then rotate the cube, and do a similar
+pattern. See how there is a symmetry to the U's again? u U U' u'. When
+I execute, I do the first R2 as R' R', counterclockwise motion. So I
+think CCW, CCW, CW, CW, and final R2 just to fix it all up.</td>
+  </tr>
+  <tr>
+    <td class="style5"><font size="2" face="Arial"><img src="pll_files/pll14.gif"></font></td>
+    <td class="style4"><span class="style5"><font size="2" face="Arial">R2</font></span><font size="2" face="Arial"> u' <span class="style5">R</span> U' <span class="style5">R</span> U <span class="style5">R'</span> u R2 [y R U' R']</font></td>
+    <td class="style11"><div align="center">G (c) </div></td>
+    <td class="style3"><div align="center">1/18</div></td>
+    <td class="style6" bgcolor="#2c1212">XXX</td>
+    <td class="style5">This
+is simply G(d) inverted. But I find it useless to remember it like
+that. This is like a completely new algorithm for me. Note the still
+distinct pattern to the U's. And also R's. Remember it as you wish. The
+last part yRU'R' just inserts an F2L pair once the first part is done. </td>
+  </tr>
+  <tr>
+    <td class="style5"><font size="2" face="Arial"><img src="pll_files/pll15.gif"></font></td>
+    <td class="style4"><span class="style5"><font size="2" face="Arial">R2</font></span><font size="2" face="Arial"> u <span class="style5">R'</span> U <span class="style5">R'</span> U' <span class="style5">R</span> u' <span class="style4">R2</span> [y' R' U R]</font></td>
+    <td class="style11"><div align="center">G (a)</div></td>
+    <td class="style3"><div align="center">1/18</div></td>
+    <td class="style6" bgcolor="#2c1212">XX</td>
+    <td class="style5">This is very similar to G(c). Everything just goes the other way :) </td>
+  </tr>
+  <tr>
+    <td class="style5"><img src="pll_files/pll04.gif" width="76" height="76"></td>
+    <td class="style4"><p><font size="2" face="Arial"><span class="style5">M2</span> <span class="style3">U</span> <span class="style5">M2</span> <span class="style3">U</span> <span class="style5">M' </span><span class="style3">U2</span> <span class="style5">M2</span> <span class="style3">U2</span> <span class="style5">M'</span> <span class="style3">U2<br>
+    </span></font></p></td>
+    <td class="style11"><div align="center">Z</div></td>
+    <td class="style3"><div align="center">1/36</div></td>
+    <td class="style6">X</td>
+    <td class="style5"><br>
+      Similar to the H permutation, I find this easy to remember, and I saw some people executing it extremely quickly.</td>
+  </tr>
+  <tr>
+    <td class="style5"><font size="2" face="Arial"><img src="pll_files/pll08.gif"></font></td>
+    <td class="style4"><font size="2" face="Arial">[R' U L'] [U2 R U' R' U2] [R L U']</font></td>
+    <td class="style11"><div align="center">J (a) </div></td>
+    <td class="style3"><div align="center">1/18</div></td>
+    <td class="style6" bgcolor="#353115">XX</td>
+    <td class="style5">1st
+      part is exactly as in N(b), below. But then you do U2RU'R'U2 which I
+      find personally very easy to remember. The last part (RLU)just simply
+      restores all yellows and I find it very easy to see it visually.</td>
+  </tr>
+  <tr>
+    <td class="style5"><font size="2" face="Arial"><img src="pll_files/pll03.gif"></font></td>
+    <td class="style4"><font class="style4" size="2" face="Arial">x'</font><span class="style5"><font size="2" face="Arial"> (R U' R')</font></span><font class="style4" size="2" face="Arial"> D </font><span class="style5"><font size="2" face="Arial" class="style3">(R U R') </font></span><font class="style4" size="2" face="Arial">D' </font><span class="style3"><font size="2" face="Arial">(R U R')</font></span><font class="style4" size="2" face="Arial"> D</font><span class="style5"><font size="2" face="Arial"> (R U' R')</font></span><font class="style4" size="2" face="Arial"> D'      <br>
+      x<span class="style5"><font size="2" face="Arial"> (R U' R')</font></span> D  <span class="style5"><font size="2" face="Arial" class="style3">(R U R') </font></span>u2 (R' U R) D (R' U' R)</font><font class="style4" size="2" face="Arial"><br>
+      </font></td>
+    <td class="style11"><div align="center">E</div></td>
+    <td class="style3"><div align="center">1/36</div></td>
+    <td class="style6">XX</td>
+    <td class="style5">This algorithm has a nice symmetry to it, as highlighted. Some people fund the second one faster to execute</td>
+  </tr>
+  <tr>
+    <td class="style5"><font size="2" face="Arial"><img src="pll_files/pll20.gif"></font></td>
+    <td class="style4"><font size="2" face="Arial">{(R' U L') <span class="style5">U2</span> (R U' L)} {(R' U L')<span class="style5"> U2</span> (R U' L)} U'</font></td>
+    <td class="style11"><div align="center">N (b) </div></td>
+    <td class="style3"><div align="center">1/72</div></td>
+    <td class="style6" bgcolor="#353115">X</td>
+    <td class="style5">Note how the algorithm is made up of two IDENTICAL pieces (in squigly brackets).<br>
+      To memorize this, track the corner in UBR. As you do R'UL', it will
+      travel along a U on the top layer of the cube. Then do U2, and then
+      restore yellows by doing RU'L. Then repeat that whole thing again. <br>
+      I hate executing this algorithm. Its a good thing that it rarely ever comes up. </td>
+  </tr>
+  <tr>
+    <td class="style5"><font size="2" face="Arial"><img src="pll_files/pll19.gif"></font></td>
+    <td class="style4"><p><span class="style5"><font size="2" face="Arial"><br>
+    </font></span><font size="2" face="Arial">{(L U' R) <span class="style5">U2</span> (L' U R')} {(L U' R)<span class="style5"> U2</span> (L' U R')} U</font></p></td>
+    <td class="style11"><div align="center">N (a) </div></td>
+    <td class="style3"><div align="center">1/72</div></td>
+    <td class="style6">X</td>
+    <td class="style5">This is just the mirror of the algorithm above and should not be hard to learn.</td>
+  </tr>
+</tbody></table>
+</div>
+</body></html>	</div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3698471-3");
+pageTracker._trackPageview();
+</script>
+</body>
+</html>

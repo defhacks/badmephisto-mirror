@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="keywords" content="cross badmephisto rubiks cube main page cubing speedcubing speedsolving fast fridrich method youtube teacher" />
+<meta name="description" content="Badmephisto's cubing website" />
+<title>Badmephisto's Cubing Site: Guide to sub-15 averages</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/JavaScript" src="showpicture.js"></script>
+<script type="text/JavaScript" src="ajaxstuff.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){ 
+$("#comments").load("phpdb/sub15_comments.txt"); 
+$("#ncb").bind("click", function(){ newComment("sub15"); });
+});
+</script>
+<style type="text/css">
+<!--
+.vid{
+	margin-left: auto;
+	margin-right: auto;
+}
+table{
+	margin-left: auto;
+	margin-right: auto;
+}
+-->
+</style>
+</head>
+
+<body>
+<style type="text/css">
+<!--
+.style123 {
+	margin-top: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #003300;
+}
+
+.bomo {
+	border: 0;
+	border-left: solid 5px #9CC8A2;
+}
+
+.bomo:hover {
+	border-left: solid 5px black;
+}
+#iphonec{
+	float: right;
+	margin-right: 10px;
+	width: 250px;
+}
+#fab{
+	float:right;
+	margin-right: 80px;
+	margin-top: 50px;
+}
+.slol {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+img {
+	border: none;
+}
+-->
+</style>
+<div id="header">
+	<table border="0px" width="100%">
+	<tr>
+	<td width="9%">
+	<img src="cubepic.png" id="cubepic" />	</td>
+	<td width="77%">
+    
+    
+      <div id="iphonec"> <a href="https://defhacks.github.io/badmephisto-mirror/iphone/" target="_blank"><img src="headerpics/iphoneapp.png" style="float: left;"/></a><br />
+      <span class="slol">
+      Try my new iPhone app!<br />
+      Forget printable sheets!<br /><br />
+      Contains all my algorithms:<br />
+      - OLL/PLL/2-look<br />
+      - Beginner's method<br />
+      - Notation page<br />
+      </span>
+      </div>
+      
+      <div id="fab">
+      
+      <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2Fbadmephisto%2F120835544626563&amp;width=250&amp;colorscheme=dark&amp;show_faces=false&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:62px;" allowTransparency="true"></iframe>
+      
+      </div>
+      
+	  <div align="right" class="style123">
+	  <div align="center">BADMEPHISTO's CUBING PAGE </div>
+      <div align="center"><a href="http://www.youtube.com/user/badmephisto" target="_blank"><img src="visitmy.png" style="border-style: none"></img></a></div>
+	 </div>
+	</td>
+	<td width="14%">
+	<div id="extlinks" align="right" style="margin-right: 50px;">
+		<img src="headerpics/external.jpg"/><br />
+		<a href="http://www.speedsolving.com/wiki" target="_blank"><img src="headerpics/wiki.jpg" class="bomo"/></a><br />
+	    <a href="http://www.speedsolving.com/forum/index.html" target="_blank"><img src="headerpics/forums.jpg" class="bomo"/></a><br />
+	   <a href="notation.html" target="_blank"><img src="headerpics/notation.jpg" class="bomo"/></a>	</div>	</td>
+	</tr>
+	</table>
+</div>
+<div id="body">
+	<div id="navbar">
+		<ul>
+		<li><a href="index.html"><img src="faq.png" />FAQ</a></li>
+        <li><a href="guide.html"><img src="guide.png" />GUIDE</a></li>
+        <br />
+		<li><a href="cross.html"><img src="cross.png" />CROSS</a></li>
+		<li><a href="f2l.html"><img src="f2l.png" />F2L</a></li>
+		<li><a href="oll.html"><img src="oll.png" />OLL</a></li>
+		<li><a href="pll.html"><img src="pll.png" />PLL</a></li>
+        <br />
+		<li><a href="beg.html" style="font-size: 12px;"><img src="beg.png"/>BEGINNER's</a></li>
+		</ul>
+		
+		<br /><br />
+		<div style="margin-left: 25px;">
+		<script type="text/javascript"><!--
+		google_ad_client = "pub-7310724940682242";
+		/* 120x240, created 2/2/09 */
+		google_ad_slot = "0377999770";
+		google_ad_width = 120;
+		google_ad_height = 240;
+		//-->
+		</script>
+		<script type="text/javascript"
+		src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+		</div>
+</div>	<div id="commentbox">
+		<h1>Comments disabled.</h1>
+    <p>Permanently. There used to be comments here that people could leave freely, but there were
+    too many trolls who abused the system and left profane messages. Thanks to those who left nice or
+    helpful comments that complemented the site.</p>
+		<div id="comments">
+		</div>
+    
+	</div>	
+	<div id="content">
+		<h1>Guide to sub-15 averages using the Fridrich Method</h1>
+        <p>I've published many videos on the Rubik's cube. Here is my attempt to order them at least approximately based on when you should watch them, and some helpful links.</p>
+		<h2>The beginnners method</h2>
+        
+        <table width="100%" border="0" cellspacing="0" cellpadding="5">
+          <tr>
+            <td width="250"><div class="vid"><iframe title="YouTube video player" width="212" height="174" src="http://www.youtube.com/embed/609nhVzg-5Q" frameborder="0" allowfullscreen></iframe></div></td>
+            <td valign="top">
+              <p>First, watch the beginner's method video.</p>
+              <p>- Here is a link to the <a href="https://defhacks.github.io/badmephisto-mirror/begsoln/" target="_blank">Printable Page</a> for my beginner's method.</p>
+              <p>- Here is a link to the <a href="https://defhacks.github.io/badmephisto-mirror/iphone/index.html" target="_blank">iPhone app</a> that contains all of it too. (Name is badmephisto)</p>
+            <p>- If you get stuck with notation, check <a href="notation.html" target="_blank">notation page</a></p></td>
+          </tr>
+        </table>
+<h2>Speedcubing world</h2>
+        <table width="100%" border="0" cellspacing="0" cellpadding="5">
+          <tr>
+            <td width="250"><div class="vid">
+              <iframe title="YouTube video player" width="212" height="174" src="http://www.youtube.com/embed/ad2NdgoAg8I" frameborder="0" allowfullscreen></iframe>
+            </div></td>
+            <td valign="top"><p>Once you solve the cube yourself at least once (even if you are still looking up the algorithms), check my intro to speedcubing video.</p>
+              <p>If you get all excited at this point, and decide to give speedcubing a try, here are some more useful links:</p>
+              <p>Use a <a href="http://www.cubetimer.com/" target="_blank">Rubik's cube timer</a> to keep track of your times. This is helpful and good.</p>
+              <p>Register on the <a href="http://www.speedsolving.com/forum/forum.php" target="_blank">speedsolving forums</a>: best way to meet other speedcubers and ask questions.</p>
+              <p>Check out the<a href="http://www.speedsolving.com/forum/forum.php" target="_blank">Rubik's cube Wiki page</a>, it contains a lot of compiled information and FAQ's.</p>
+            <p>If you want to get yourself a better cube or ask about lubrication, check the<a href="http://www.speedsolving.com/forum/forum.php" target="_blank">Hardware section of the forum</a>. These people know a lot about cubes, and which ones are best at any time. You can go nuts :)</p></td>
+          </tr>
+        </table>
+    <h2>Perfecting your beginner's method</h2>
+        <table width="100%" border="0" cellspacing="0" cellpadding="5">
+          <tr>
+            <td width="250"><div class="vid"><iframe title="YouTube video player" width="212" height="174" src="http://www.youtube.com/embed/EOEZlFAsSL0" frameborder="0" allowfullscreen></iframe></div></td>
+            <td valign="top">First thing you might want to do is start standardizing your solves to make them look very similar. This video explains the idea.</td>
+          </tr>
+        </table>
+<h2>Learning the First Two Layers (F2L)</h2>        
+        <p>You can move on once you are comfortable solving the cube using the beginner's method, and once you have all the beginner's method algorithms memorized.</p>
+        <p>You are now ready to learn the F2L!! This is big deal! :) Here it is:</p>
+        
+        <table width="700" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><div class="vid"><iframe title="YouTube video player" width="212" height="174" src="http://www.youtube.com/embed/k-xbcAMfWwM" frameborder="0" allowfullscreen></iframe></div></td>
+            <td><div class="vid"><iframe title="YouTube video player" width="212" height="174" src="http://www.youtube.com/embed/4GxLM_dZqg4" frameborder="0" allowfullscreen></iframe></div></td>
+          </tr>
+        </table>
+        
+        <p>F2L will really take some time to sink in. It may even slow you down at first, but it's all worth it, I assure you. Just practice more. F2L will become your greatest source of speedup in your solves. You will love it.</p>
+        
+        <p>At this point, you will start liking my tutorials, and you will want to <a href="http://www.facebook.com/home.php?#!/pages/badmephisto/120835544626563" target="_blank">visit my Facebook page</a> and Like it. It will speed you up a lot ;) Just kidding, you don't have to like it. Why am I even putting this here?</p>
+                
+        <h2>Learning 2-look Last Layer</h2> 
+        <table width="100%" border="0" cellspacing="0" cellpadding="5">
+          <tr>
+            <td width="250"><div class="vid">
+              <iframe title="YouTube video player" width="212" height="174" src="http://www.youtube.com/embed/DTYvklyOpVM" frameborder="0" allowfullscreen></iframe>
+            </div></td>
+            <td valign="top"><p>While you are making sense of F2L, you ca go ahead and start learning more advanced methods for solving the last layer. Now is a good time to start learning the 2-look OLL:</p>
+            <p>You can find a printable sheet for the 2-look OLL <a href="https://defhacks.github.io/badmephisto-mirror/2LookOLL.pdf" target="_blank">here</a>, or you can also find it in my iPhone app.</p></td>
+          </tr>
+          <tr>
+            <td width="250"><div class="vid">
+              <iframe title="YouTube video player" width="212" height="174" src="http://www.youtube.com/embed/S61q3FYVFis" frameborder="0" allowfullscreen></iframe>
+            </div></td>
+            <td valign="top"><p>After 2-look OLL, you can start learning the 2-look PLL algorithms:</p>
+            <p>You can find a printable sheet for the 2-look PLL <a href="https://defhacks.github.io/badmephisto-mirror/2LookPLL.pdf" target="_blank">here</a>, or you can also find it in my iPhone app.</p></td>
+          </tr>
+        </table>
+<h2>Re-visiting the cross</h2> 
+        <p>Once you are in the middle of learning the 2-look last layer, and getting comfortable with the F2L, you can start trying to perfect your cross. Here are some videos that introduce you to some of the ideas:</p> 
+        
+        <table width="700" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><div class="vid"><iframe title="YouTube video player"  width="212" height="174" src="http://www.youtube.com/embed/hY_FbpdNRCQ" frameborder="0" allowfullscreen></iframe></div></td>
+            <td><div class="vid"><iframe title="YouTube video player" width="212" height="174" src="http://www.youtube.com/embed/BTydBg21aaw" frameborder="0" allowfullscreen></iframe></div></td>
+          </tr>
+        </table>
+        
+        <h2>Re-visiting the F2L</h2> 
+        <p>When you start to become very comfortable with the F2L, and being able to solve it easily, you can start trying to perfect it. I have many videos on how you can go about doing this.</p>
+        <table width="100%" border="0" cellspacing="0" cellpadding="5">
+          <tr>
+            <td width="19%"><iframe title="YouTube video player" width="212" height="174" src="http://www.youtube.com/embed/RdSiQQ9VSEY" frameborder="0" allowfullscreen></iframe></td>
+            <td width="33%" valign="top">First, maybe you want to start trying to use some finger-tricks. I go over some of them in this video.</td>
+            <td width="19%" valign="top"><iframe title="YouTube video player"  width="212" height="174" src="http://www.youtube.com/embed/pnkSZZ6OoQ4" frameborder="0" allowfullscreen></iframe></td>
+            <td width="29%" valign="top">Next up, we have some tips on practicing the F2L.</td>
+          </tr>
+          <tr>
+            <td><iframe title="YouTube video player" width="212" height="174" src="http://www.youtube.com/embed/lu0TkcwVUT4" frameborder="0" allowfullscreen></iframe></td>
+            <td valign="top">I also made a quick video about best ways to pop out a croner from the bottom to pair up with its edge</td>
+            <td valign="top"><iframe title="YouTube video player" width="212" height="174" src="http://www.youtube.com/embed/pzkHrz8x2eo" frameborder="0" allowfullscreen></iframe></td>
+            <td valign="top">The most important idea you should be getting out of all of it is that tracking the F2L pieces and always looking ahead is extremely important. Here is a sample of what my thought process looks like while I solve the F2L.</td>
+          </tr>
+          <tr>
+            <td><iframe title="YouTube video player" width="212" height="174" src="http://www.youtube.com/embed/xhRnLpvGkXE" frameborder="0" allowfullscreen></iframe></td>
+            <td colspan="3" valign="top"><p>Finally, here is a video that goes over some advanced F2L techniques that exist around the internets. There's a couple of good things in it, but take some of it with a grain of salt. Near the end, for example, I go over multi-slotting and whatnot. You want to ignore most of that, it's not applicable in real-life solves. </p>
+            <p>When you look at REALLY good cubers, they don't use any super advanced F2L techniques. They use very basic insertions coupled with very high speed, and most importantly an amazing look-ahead. Still:</p></td>
+          </tr>
+        </table>
+<div class="vid"></div>
+        
+        <h2>Learning the PLL</h2> 
+        <p>Once you are doing well with your F2L and your cross, you want to slowly start learning the PLLs. There are 21 algorithms for this stage, but you already know many of them. Check out <a href="https://defhacks.github.io/badmephisto-mirror/pll.html" target="_blank">my PLL page</a>, which contains many good resources and links to printable sheets, etc.</p>
+        <table width="100%" border="0" cellspacing="0" cellpadding="5">
+          <tr>
+            <td width="250"><iframe title="YouTube video player" width="212" height="174" src="http://www.youtube.com/embed/niCubJ779KU" frameborder="0" allowfullscreen></iframe></td>
+            <td valign="top">Here are some tips for memorizing the PLL's.</td>
+          </tr>
+          <tr>
+            <td><iframe title="YouTube video player" width="212" height="174" src="http://www.youtube.com/embed/0Id44xvrvWo" frameborder="0" allowfullscreen></iframe></td>
+            <td valign="top">Here are tips for learning both PLLs and OLLs. It's more about how do you remember these algorithms in the first place. How do you memorize them? This gives some tips, and try to convince you that even though there are many algorithms, it's not as bad as it seems.</td>
+          </tr>
+          <tr>
+            <td><iframe title="YouTube video player" width="212" height="174" src="http://www.youtube.com/embed/qBYycb7hR4Y" frameborder="0" allowfullscreen></iframe></td>
+            <td valign="top">Finally, here is my attempt to show you approximately how I go about recognizing the PLL's. Basically, there are some features that come up on the top layer that give you strong indication of which PLL you should execute, and in this video I go over them.</td>
+          </tr>
+        </table>
+        <div class="vid"></div>
+        <div class="vid"></div>
+<div class="vid"></div>
+        
+        <h2>Learning the OLL</h2> 
+        <table width="100%" border="0" cellspacing="0" cellpadding="5">
+          <tr>
+            <td width="250"><iframe title="YouTube video player" width="212" height="174" src="http://www.youtube.com/embed/lPvF21KeAPE" frameborder="0" allowfullscreen></iframe></td>
+            <td valign="top"><p>Once you know most of the PLL's, you are ready to start learning the OLL's. The first important video that you should have already watched is listed together with the PLL's above. It's called &quot;Tips/Tricks for learning OLL/PLL [New!]&quot;</p>
+            <p>Finally, I have one more video on tips for learning OLL's, and some other surrounding tricks.</p>
+            <p>You can find more details on my <a href="https://defhacks.github.io/badmephisto-mirror/oll.html" target="_blank">OLL page</a>. </p></td>
+          </tr>
+        </table>
+<div class="vid"></div>
+        
+        <h2>You're done!</h2>
+        <p>That's it! From now, you know all the theory. All you have to do now is practice practice practice practice practice, and you will be averaging about 15 seconds or less.</p>
+        <p>I have more videos on my channel: How do you solve with one hand? How do you solve blindfolded? How do you use commutators? And a few videos that I didn't list here, because I think they suck a little :) Some people may disagree :)</p>
+        <p>Good Luck!</p>
+        <p>-meph</p>
+  </div>
+</div>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3698471-3");
+pageTracker._trackPageview();
+</script>
+</body>
+</html>
